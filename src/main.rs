@@ -54,7 +54,7 @@ async fn main() -> Result<(), anyhow::Error> {
         book_order.new_bids(bids);
 
         println!("Asks:");
-        for item in book_order.asks.iter().rev().take(5) {
+        for item in book_order.asks.iter().take(5) {
             println!("{} | {}", item.0, item.1)
         }
 
